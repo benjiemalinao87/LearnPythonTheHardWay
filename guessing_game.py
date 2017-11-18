@@ -42,7 +42,7 @@ def repeat():
     if answer == 'Y':
         main()
     else :
-        print('Goodby!')
+        print('Goodby! Thanks for using this program!')
     
     
     
