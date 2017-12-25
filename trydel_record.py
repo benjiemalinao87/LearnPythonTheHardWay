@@ -10,11 +10,11 @@ print('\n')
 
 def name_mobile():
     print('\n')
-    print ('Enter name and mobile to add to phonebooks')
+    print('Enter name and mobile to add to phonebooks')
     add_name = str(input('Enter name: '))
     add_mobile = str(input('Enter mobile number: '))
     phonebooks[add_name] = add_mobile
-   
+
     print(phonebooks)
 
     print('Writing on the file...please wait...SUCCESSFULL ADDED!')
@@ -22,18 +22,17 @@ def name_mobile():
     target = open('phonebooks.txt', 'a+')
     for key, val in phonebooks.items():
         target.write(key + ' = ' + val + '\n')
-   
-  
-
-    
-
-name_mobile()
 
 
-    
+#name_mobile()
 
 
+target = open('phonebooks.txt')
+print('Enter name to delete: ')
+delete = input(prompt)
 
+for delete in phonebooks.keys():
+    if  delete == phonebooks.keys:
+        del phonebooks['Benjie']
 
-
-
+    print('Deleted!')
