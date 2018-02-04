@@ -21,7 +21,7 @@ def dump_phonebook():
     # print('Writing to file.... ')
     for name in phonebooks:
         target.write(name  + " = " + phonebooks[name] + "\n")
-        #print('Writing ' + name + " to the file")
+        print('Writing ' + name + " to the file")
     target.close()
 
 def name_mobile():
