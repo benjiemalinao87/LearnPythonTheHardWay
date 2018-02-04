@@ -18,10 +18,10 @@ def load_phonebook():
 
 def dump_phonebook():
     target = open('phonebooks.txt', 'w+')
-    print('Writing to file.... ')
+    # print('Writing to file.... ')
     for name in phonebooks:
         target.write(name  + " = " + phonebooks[name] + "\n")
-        print('Writing ' + name + " to the file")
+        #print('Writing ' + name + " to the file")
     target.close()
 
 def name_mobile():
@@ -34,7 +34,7 @@ def name_mobile():
     return phonebooks
 
 def addname_mobile():
-    print('Writing on the file...please wait...SUCCESSFULL ADDED!')
+    #print('Writing on the file...please wait...SUCCESSFULL ADDED!')
 
     target = open('phonebooks.txt', 'a+')
     for key, val in phonebooks.items():
@@ -75,7 +75,7 @@ def choice():
     elif ans == '2':
         
         delete_contact()
-        print(phonebooks)
+        #print(phonebooks)
 
     elif ans == '3':
         clear_record()
